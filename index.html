@@ -1,0 +1,114 @@
+ "c:\Users\Higashi Aiko\OneDrive - お茶の水女子大学\デスクトップ\kyoso-web"; powershell -NoProfile -Command "@'
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- 文字コード指定 -->
+    <meta charset="UTF-8">
+    <!-- スマホ画面対応 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ページタイトル -->
+    <title>共創工学部 - 未来を共に創る</title>
+    <!-- 外部CSS読み込み -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ヘッダー：ロゴとページ内リンク -->
+    <header class="header">
+        <div class="container header-inner">
+            <div class="logo">共創工学部</div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#features">特徴</a></li>
+                    <li><a href="#cards">学び</a></li>
+                    <li><a href="#contact">もっと知りたい人へ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション：トップキャッチコピー -->
+    <main>
+        <section class="hero">
+            <div class="container hero-box">
+                <p class="eyebrow">高校生・大学を検討中の皆さんへ</p>
+                <h1 class="hero-title">未来を一緒につくる、<br>あたらしい工学の学び。</h1>
+                <p class="hero-text">共創工学部では、仲間と協力しながら社会課題に挑戦し、実践的な力を育てます。</p>
+                <button id="hero-button" class="button-primary">共創工学部を知る</button>
+            </div>
+        </section>
+
+        <!-- 特徴セクション：3つのポイント -->
+        <section id="features" class="features">
+            <div class="container">
+                <h2 class="section-title">共創工学部の3つの特徴</h2>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">🤝</div>
+                        <h3>チームでつくる学び</h3>
+                        <p>仲間と一緒にアイデアを出し合い、共に成長する環境があります。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🛠️</div>
+                        <h3>実践的なプロジェクト</h3>
+                        <p>教室だけでなく、フィールドワークや制作活動を通じて学びます。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">🌱</div>
+                        <h3>未来に役立つ力</h3>
+                        <p>課題解決能力やコミュニケーション力を育て、次の一歩を支えます。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 学びのイメージカード -->
+        <section id="cards" class="learning-section">
+            <div class="container">
+                <h2 class="section-title">学びのイメージ</h2>
+                <div class="card-grid">
+                    <article class="learning-card">
+                        <div class="card-icon">💻</div>
+                        <h3>デジタルで解決</h3>
+                        <p>プログラミングやデータ分析を使って、問題を解決する力を身につけます。</p>
+                    </article>
+                    <article class="learning-card">
+                        <div class="card-icon">🏗️</div>
+                        <h3>ものづくりの現場</h3>
+                        <p>ロボットや実験装置づくりを通して、自分のアイデアを形にします。</p>
+                    </article>
+                    <article class="learning-card">
+                        <div class="card-icon">🧠</div>
+                        <h3>考えをカタチに</h3>
+                        <p>デザイン思考で、人にやさしいしくみを考える力を育てます。</p>
+                    </article>
+                    <article class="learning-card">
+                        <div class="card-icon">🌏</div>
+                        <h3>社会とつながる</h3>
+                        <p>地域や社会の課題に寄り添い、実際の活動で学びを深めます。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- もっと知りたい人へのメッセージ -->
+        <section id="contact" class="contact">
+            <div class="container contact-box">
+                <h2>もっと知りたい人へ</h2>
+                <p>共創工学部の学びや雰囲気を知りたいなら、オープンキャンパスや説明会にぜひ参加してみてください！</p>
+                <a href="#" class="button-secondary">詳しい情報を見る</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>;&copy; 2026 共創工学部</p>
+        </div>
+    </footer>
+
+    <!-- 外部JavaScript読み込み -->
+    <script src="script.js"></script>
+</body>
+</html>
+'@ | Set-Content -Path "index.html" -Encoding utf8; @'
